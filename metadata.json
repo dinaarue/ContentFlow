@@ -1,0 +1,6 @@
+{
+  "name": "ContentFlow",
+  "description": "Aplikasi manajemen dan penjadwalan konten media sosial untuk tim humas dari riset hingga analisis engagement.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

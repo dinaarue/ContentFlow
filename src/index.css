@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Poppins", system-ui, -apple-system, sans-serif;
+  --font-sans: "Nunito Sans", system-ui, -apple-system, sans-serif;
+
+  --color-sage: #A9BBA6;
+  --color-cream: #F7F4EC;
+  --color-lavender: #D8D0E5;
+  --color-light-sage: #E8EEE5;
+  --color-dark-green: #34443B;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #34443B;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle custom scrollbar for mobile portrait scroll container */
+.app-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.app-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.app-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(52, 68, 59, 0.16);
+  border-radius: 9999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
